@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/aleo-bold-webfont.woff2') format('woff2'),
+         url('fonts/aleo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../fonts/pts75f-webfont.woff2') format('woff2'),
+         url('fonts/pts75f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/PTS55F-webfont.eot');
+    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTS55F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$title-font: 'aleobold';
+$bold-font:'pt_sansbold';
+$regular-font:'pt_sansregular';
+// $sans-regular:

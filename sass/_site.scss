@@ -1,0 +1,25 @@
+body {
+    background-color: $background-color;
+    color: $text_main;
+    font-family: $regular-font;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+h1 {
+    color: $title-color;
+    font-family: $title-font;
+}
+
+.wrapper {
+    background-color: $background-color;
+    // widows: 900px;
+    // max-width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+
+}

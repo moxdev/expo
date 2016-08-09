@@ -1,0 +1,21 @@
+#invite {
+    width: 50%;
+    float: left;
+
+    h1 {
+        background-color: $mm4_gray;
+    }
+    .invite-content{
+        .desc {
+            text-transform: uppercase;
+            color: $mm4_blue;
+
+        }
+        .info {
+            margin: 0 20px;
+            font-weight: normal;
+
+        }
+
+    }
+}
