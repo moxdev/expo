@@ -1,10 +1,11 @@
 #registration {
-    background-image: url("../images/background.png");
-    background-position: right top;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     clear: both;
+    background-image: url("../images/background.png");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
     .title {
          background-color: $mm4-yellow;
     }
@@ -15,9 +16,15 @@
             .form-row {
                 display: block;
                 margin: 10px;
+                label {
+                    color: $mm4_white;
+                }
                 input {
                     width: 50%;
                 }
+            }
+            .honey {
+                display: none!important;
             }
         }
         .schedule-section {
@@ -31,14 +38,17 @@
                 color: $mm4-white;
                 span {
                     font-family: $bold-font;
-                    letter-spacing: 1px;
                 }
             }
-            input {
-                margin: 10px;
-            }
-            .checkbox-info {
+            label {
                 color: $mm4_yellow;
+            }
+            input {
+                margin: 15px;
+            }
+            .read-more {
+                color: $mm4_white;
+                margin-left: 40px;
             }
         }
         .submit {
@@ -51,6 +61,32 @@
             border: none;
             background-color: $mm4-orange;
             color: $mm4_white;
+            text-transform: uppercase;
+        }
+    }
+    .footer-social {
+        clear: both;
+        .wrapper-footer {
+            width: 49%;
+            float: left;
+            a {
+                padding: 20px;
+            }
+            #mm4 {
+                width: 200px;
+            }
+        }
+        .social{
+            width: 49%;
+            float: right;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        address {
+            width: 49%;
+            float: right;
+            clear: right;
+            text-align: right;
         }
     }
 }

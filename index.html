@@ -14,10 +14,7 @@
     <div class="wrapper">
         <div class="content">
             <header>
-                <div class="title">
-                    <span class="logo"></span>
-                    <h1>Welcome! Excited for You to Join Us.</h1>
-                </div>
+                <h1><span><img class="logo" src="images/logo.svg" alt=""></span> Welcome! Excited for You to Join Us.</h1>
             </header>
             <!--header-->
             <section id="invite">
@@ -46,56 +43,88 @@
                 <div class="title">
                     <h1>Event Schedule &amp; Registration</h1>
                 </div>
-                <div class="registration-wrapper test">
+                <div class="registration-wrapper">
                     <form id="contact-form" name="contact-form" action="post">
                         <div class="form-section test">
                             <span class="form-row">
-                                <label for="firstName">*First Name:</label>
-                                <input type="text" id="firstName" name="First-Name" class="required" />
+                                <label for="first-name">* First Name:</label>
+                                <input type="text" name="first-name" id="first-name" class="required" />
                             </span>
                             <span class="form-row">
-                                <label for="lastName">*Last Name:</label>
-                                <input type="text" id="lastName" name="Last-Name" class="required" />
+                                <label for="last-name">* Last Name:</label>
+                                <input type="text" name="last-name" id="last-name" class="required" />
                             </span>
                             <span class="form-row">
-                                <label for="company">*Company:</label>
-                                <input type="text" id="company" name="Company" class="required" />
+                                <label for="company">* Company:</label>
+                                <input type="text" name="company" id="company" class="required" />
                             </span>
                             <span class="form-row">
-                                <label for="title">*Title:</label>
-                                <input type="text" id="title" name="Title" class="required" />
+                                <label for="job-title">* Title:</label>
+                                <input type="text" name="job-title" id="job-title" class="required" />
                             </span>
                             <span class="form-row">
-                                <label for="email">*Email:</label>
-                                <input type="text" id="email" name="Email" class="required email" />
+                                <label for="email">* Email:</label>
+                                <input type="email" name="email" id="email" class="required email" />
                             </span>
                             <span class="form-row">
-                                <label for="how">How Did You Hear About Us?</label>
-                                <input type="text" id="how" name="How" />
+                                <label for="how-hear">How Did You Hear About Us?</label>
+                                <input type="text" name="how-hear" id="how-hear">
+                            </span>
+                            <span class="form-row">
+                                <label for="comments" class="honey">Comments</label>
+                                <textarea class="honey" name="comments" id="comments"></textarea>
+                            </span>
+                            <span class="form-row">
+                                <label for="spam" class="honey">What is 2 plus two?</label>
+                                <input type="text" class="honey" name="spam" id="spam">
                             </span>
                         </div>
                         <!-- form-section -->
                         <div class="schedule-section test">
                             <h3>9:00am - 2:00pm - Doors Open; School is in Session</h3>
                             <p>Arrive to school early so that you don’t have to wait in line or miss a class! <span>Stay for the day or for a short visit</span>. Throughout the day you will have the opportunity to meet Millennium team members and visit with industry professionals.</p>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">I just want to attend the Expo and not register for seminars.</span><br>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">I will be attending the Expo and the below classes.</span><br>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">9:30am - 10:15am - DIG 101: It’s ACADEMIC!</span><br><span>Read Class Description >></span><br>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">10:45am - 11:30am - PROMO 201: Thinking outside the box, inside of the box with Promo Products<br><span>Read Class Description >></span></span><br>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">12:00pm - 12:45pm - Professional Photos or Not<br><span>Read Class Description >></span></span><br>
-                            <input type="checkbox" class="checkboxes" name="" value=""> <span class="checkbox-info">1:15pm - 1:45pm - DEV 202: Websites: 3 Essential Must-Have’s<br><span>Read Class Description >></span></span><br>
+
+                            <label for="just-attend"><input type="checkbox" name="just-attend" id="just-attend" value="Yes"><span class="checkbox-info">I just want to attend the Expo and not register for seminars.</span></label><br>
+
+                            <label for="expo-and-seminars"><input type="checkbox" name="expo-and-seminars" id="expo-and-seminars" value="Yes"><span class="checkbox-info">I will be attending the Expo and the below classes.</span></span></label><br>
+
+                            <label for="its-academic"><input type="checkbox" name="its-academic" id="its-academic" value="Yes"><span class="checkbox-info">9:30am - 10:15am - DIG 101: It’s ACADEMIC!<br><span class="read-more">Read Class Description >></span></span></label><br>
+
+                            <label for="outside-the-box"><input type="checkbox" name="outside-the-box" id="outside-the-box" value="Yes"><span class="checkbox-info">10:45am - 11:30am - PROMO 201: Thinking outside the box, inside of the box with Promo Products<br><span class="read-more">Read Class Description >></span></span></label><br>
+
+                            <label for="professional-photos"><input type="checkbox" name="professional-photos" id="professional-photos" value="Yes"> <span class="checkbox-info">12:00pm - 12:45pm - Professional Photos or Not<br><span class="read-more">Read Class Description >></span></span></label><br>
+
+                            <label for="website-essentials"><input type="checkbox" name="website-essentials" id="website-essentials" value="Yes"><span class="checkbox-info">1:15pm - 1:45pm - DEV 202: Websites: 3 Essential Must-Have’s<br><span class="read-more">Read Class Description >></span></span></label><br>
                         </div>
                         <!-- schedule-section -->
-                        <input type="submit" value="I AM FINISHED REGISTERING" name="Submit" class="submit" />
+                        <input type="submit" value="I Am Finished Registering" class="submit" />
                     </form>
                     <!-- contact-form -->
                 </div>
                 <!-- registration-wrapper -->
+                <div class="footer-social">
+                    <div class="wrapper-footer">
+                        <a href="http://www.mm4solutions.com"><img id="mm4" src="images/mm_footer_W.svg" alt="Millennium Marketing Solutions" /></a>
+                        <a href="https://www.google.com/partners/#a_profile;idtf=5819262343;" target="_blank"><img id="google-partner" src="images/google-partner.gif" alt="Google Partner" /></a>
+                        <img id="wbenc" src="images/wbenc.png" alt="Women's Business Enterprise" width="81" height="35"/>
+                    </div>
+                    <!-- wrapper-footer -->
+                    <div class="social">
+                        <a href="https://www.facebook.com/MillenniumMarketing" id="facebook" class="social-icon" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/MillenniumMKTG" id="twitter" class="social-icon" target="_blank">Twitter</a>
+                        <a href="http://www.linkedin.com/company/628509?trk=tyah" id="linkedin" class="social-icon" target="_blank">LinkedIn</a>
+                        <a href="https://plus.google.com/u/0/117229805711574933779/posts" id="google-plus" class="social-icon" target="_blank">Google +</a>
+                    </div>
+                    <!-- social -->
+                    <address>
+                        <span class="first">10900 Pump House Road, Annapolis Junction, MD 20701</span><br>
+                        <span class="second">301.725.8000 | <a href="http://www.mm4solutions.com" target="_blank">www.mm4solutions.com</a></span>
+                    </address>
+                    <!-- address -->
+                </div>
+                <!-- footer-social -->
             </section>
             <!--registration-->
-            <section id="footer">
-            </section>
-            <!-- footer -->
         </div>
         <!-- content -->
     </div>
