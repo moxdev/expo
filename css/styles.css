@@ -617,33 +617,53 @@ header h1 {
   width: 49%;
   float: left;
 }
-/* line 16, ../sass/_registration.scss */
-#registration .registration-wrapper .form-section #contact-form .form-row {
+/* line 15, ../sass/_registration.scss */
+#registration .registration-wrapper .form-section .form-row {
   display: block;
   margin: 10px;
 }
-/* line 19, ../sass/_registration.scss */
-#registration .registration-wrapper .form-section #contact-form .form-row input {
+/* line 18, ../sass/_registration.scss */
+#registration .registration-wrapper .form-section .form-row input {
   width: 50%;
 }
-/* line 25, ../sass/_registration.scss */
+/* line 23, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section {
   width: 49%;
   float: right;
   clear: right;
 }
-/* line 29, ../sass/_registration.scss */
+/* line 27, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section h3 {
   color: #ffd456;
 }
-/* line 32, ../sass/_registration.scss */
+/* line 30, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section p {
   color: #FFF;
 }
-/* line 34, ../sass/_registration.scss */
+/* line 32, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section p span {
   font-family: "pt_sansbold";
   letter-spacing: 1px;
+}
+/* line 37, ../sass/_registration.scss */
+#registration .registration-wrapper .schedule-section input {
+  margin: 10px;
+}
+/* line 40, ../sass/_registration.scss */
+#registration .registration-wrapper .schedule-section .checkbox-info {
+  color: #ffd456;
+}
+/* line 44, ../sass/_registration.scss */
+#registration .registration-wrapper .submit {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+  background-color: #e75200;
+  color: #FFF;
 }
 
 /*--------------------------------------------------------------

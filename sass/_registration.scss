@@ -12,13 +12,11 @@
         .form-section {
             width: 49%;
             float: left;
-            #contact-form {
-                .form-row {
-                    display: block;
-                    margin: 10px;
-                    input {
-                        width: 50%;
-                    }
+            .form-row {
+                display: block;
+                margin: 10px;
+                input {
+                    width: 50%;
                 }
             }
         }
@@ -36,6 +34,23 @@
                     letter-spacing: 1px;
                 }
             }
+            input {
+                margin: 10px;
+            }
+            .checkbox-info {
+                color: $mm4_yellow;
+            }
+        }
+        .submit {
+            float: left;
+            clear: both;
+            width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 0;
+            border: none;
+            background-color: $mm4-orange;
+            color: $mm4_white;
         }
     }
 }
