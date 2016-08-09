@@ -4,6 +4,10 @@ body {
     font-family: $regular-font;
 }
 
+input, textarea {
+    display: block;
+}
+
 .test {
     border: 1px solid red;
 }

@@ -525,17 +525,22 @@ body {
 }
 
 /* line 7, ../sass/_site.scss */
+input, textarea {
+  display: block;
+}
+
+/* line 11, ../sass/_site.scss */
 .test {
   border: 1px solid red;
 }
 
-/* line 11, ../sass/_site.scss */
+/* line 15, ../sass/_site.scss */
 h1 {
   color: #FFF;
   font-family: "aleobold";
 }
 
-/* line 16, ../sass/_site.scss */
+/* line 20, ../sass/_site.scss */
 .wrapper {
   background-color: #FFF;
   margin: 0 auto;
@@ -650,7 +655,7 @@ header h1 {
   margin: 10px;
 }
 /* line 40, ../sass/_registration.scss */
-#registration .registration-wrapper .schedule-section .checkbox-info {
+#registration .registration-wrapper .schedule-section label {
   color: #ffd456;
 }
 /* line 44, ../sass/_registration.scss */
