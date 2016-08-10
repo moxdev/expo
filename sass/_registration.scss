@@ -15,12 +15,18 @@
             float: left;
             .form-row {
                 display: block;
-                margin: 10px;
+                margin: 20px;
                 label {
                     color: $mm4_white;
+                    width: 150px;
+                    height: auto;
+                    text-align: right;
+                    margin-right:15px;
+                    float:left;
                 }
                 input {
-                    width: 50%;
+                    width: 70%;
+                    // height: 30px;
                 }
             }
             .honey {
@@ -64,9 +70,10 @@
             text-transform: uppercase;
         }
     }
-    .footer-social {
+    .footer-wrapper {
         clear: both;
-        .wrapper-footer {
+        color: $mm4_white;
+        .footer-promo {
             width: 49%;
             float: left;
             a {
@@ -76,17 +83,20 @@
                 width: 200px;
             }
         }
-        .social{
+        .footer-social{
             width: 49%;
             float: right;
             text-align: right;
             margin-bottom: 20px;
         }
-        address {
+        .footer-address {
             width: 49%;
             float: right;
             clear: right;
             text-align: right;
+            a {
+                color: $mm4_white;
+            }
         }
     }
 }

@@ -1,0 +1,1 @@
+$(document).ready(function(){"undefined"==typeof jQuery?console.log("jQuery Undefined"):console.log("Loaded"),$(".stuff").readmore({speed:75})});

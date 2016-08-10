@@ -518,20 +518,19 @@ template {
 # Site
 --------------------------------------------------------------*/
 /* line 1, ../sass/_site.scss */
-body {
-  background-color: #FFF;
-  color: #000;
-  font-family: "pt_sansregular";
+html {
+  box-sizing: border-box;
 }
 
-/* line 7, ../sass/_site.scss */
-.test {
-  border: 1px solid red;
+/* line 5, ../sass/_site.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* line 10, ../sass/_site.scss */
+/* line 9, ../sass/_site.scss */
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* line 14, ../sass/_site.scss */
@@ -542,14 +541,32 @@ h1 {
 }
 
 /* line 20, ../sass/_site.scss */
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: "pt_sansregular";
+}
+
+/* line 26, ../sass/_site.scss */
 .wrapper {
   background-color: #FFF;
   margin: 0 auto;
 }
 
-/* line 27, ../sass/_site.scss */
+/* line 33, ../sass/_site.scss */
 .title {
   width: 100%;
+}
+
+/* line 38, ../sass/_site.scss */
+.test {
+  border: 1px solid red;
+}
+
+/* line 42, ../sass/_site.scss */
+.colored {
+  color: red;
+  font-size: 3em;
 }
 
 /*--------------------------------------------------------------
@@ -581,12 +598,16 @@ header .logo {
 #invite .title {
   background-color: #807e82;
 }
-/* line 9, ../sass/_invite.scss */
+/* line 8, ../sass/_invite.scss */
+#invite .invite-content {
+  padding: 0 20px;
+}
+/* line 10, ../sass/_invite.scss */
 #invite .invite-content .desc {
   text-transform: uppercase;
   color: #0072ae;
 }
-/* line 14, ../sass/_invite.scss */
+/* line 15, ../sass/_invite.scss */
 #invite .invite-content .info {
   margin: 0 20px;
   font-weight: normal;
@@ -604,15 +625,24 @@ header .logo {
 #about .title {
   background-color: #e75200;
 }
-/* line 9, ../sass/_about.scss */
+/* line 8, ../sass/_about.scss */
+#about .about-content {
+  padding: 0 20px;
+}
+/* line 10, ../sass/_about.scss */
 #about .about-content h3 {
   text-transform: uppercase;
   color: #0072ae;
 }
-/* line 13, ../sass/_about.scss */
+/* line 14, ../sass/_about.scss */
 #about .about-content a {
   color: #e75200;
   text-decoration: none;
+}
+/* line 18, ../sass/_about.scss */
+#about .about-content .blue-words {
+  color: #0072ae;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
@@ -640,52 +670,57 @@ header .logo {
 /* line 16, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .form-row {
   display: block;
-  margin: 10px;
+  margin: 20px;
 }
 /* line 19, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .form-row label {
   color: #FFF;
+  width: 150px;
+  height: auto;
+  text-align: right;
+  margin-right: 15px;
+  float: left;
 }
-/* line 22, ../sass/_registration.scss */
+/* line 27, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .form-row input {
-  width: 50%;
+  width: 70%;
 }
-/* line 26, ../sass/_registration.scss */
+/* line 32, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .honey {
   display: none !important;
 }
-/* line 30, ../sass/_registration.scss */
+/* line 36, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section {
   width: 49%;
   float: right;
   clear: right;
 }
-/* line 34, ../sass/_registration.scss */
+/* line 40, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section h3 {
   color: #ffd456;
 }
-/* line 37, ../sass/_registration.scss */
+/* line 43, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section p {
   color: #FFF;
 }
-/* line 39, ../sass/_registration.scss */
+/* line 45, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section p span {
   font-family: "pt_sansbold";
 }
-/* line 43, ../sass/_registration.scss */
+/* line 49, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section label {
   color: #ffd456;
 }
-/* line 46, ../sass/_registration.scss */
+/* line 52, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section input {
   margin: 15px;
 }
-/* line 49, ../sass/_registration.scss */
+/* line 55, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section .read-more {
   color: #FFF;
   margin-left: 40px;
 }
-/* line 54, ../sass/_registration.scss */
+/* line 60, ../sass/_registration.scss */
 #registration .registration-wrapper .submit {
   float: left;
   clear: both;
@@ -698,36 +733,41 @@ header .logo {
   color: #FFF;
   text-transform: uppercase;
 }
-/* line 67, ../sass/_registration.scss */
-#registration .footer-social {
+/* line 73, ../sass/_registration.scss */
+#registration .footer-wrapper {
   clear: both;
+  color: #FFF;
 }
-/* line 69, ../sass/_registration.scss */
-#registration .footer-social .wrapper-footer {
+/* line 76, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-promo {
   width: 49%;
   float: left;
 }
-/* line 72, ../sass/_registration.scss */
-#registration .footer-social .wrapper-footer a {
+/* line 79, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-promo a {
   padding: 20px;
 }
-/* line 75, ../sass/_registration.scss */
-#registration .footer-social .wrapper-footer #mm4 {
+/* line 82, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-promo #mm4 {
   width: 200px;
 }
-/* line 79, ../sass/_registration.scss */
-#registration .footer-social .social {
+/* line 86, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-social {
   width: 49%;
   float: right;
   text-align: right;
   margin-bottom: 20px;
 }
-/* line 85, ../sass/_registration.scss */
-#registration .footer-social address {
+/* line 92, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-address {
   width: 49%;
   float: right;
   clear: right;
   text-align: right;
+}
+/* line 97, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-address a {
+  color: #FFF;
 }
 
 /*--------------------------------------------------------------
