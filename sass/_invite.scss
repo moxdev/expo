@@ -1,22 +1,47 @@
 #invite {
-    width: 50%;
-    float: left;
+    // width: 50%;
+    // float: left;
 
     .title {
         background-color: $mm4_gray;
     }
     .invite-content{
-        padding: 0 20px;
+        // padding: 0 20px;
         .desc {
             text-transform: uppercase;
             color: $mm4_blue;
-
+            // float: left;
+            // width: 20%;
+            // padding-top: 10px;
         }
         .info {
-            margin: 0 20px;
+            // padding: 10px 20px;
             font-weight: normal;
-
+            // float: left;
+            // width: 70%;
         }
 
+    }
+
+    @include respond-to(iphone) {
+        #invite {
+            width: 100%;
+            float: none;
+        }
+        h1 {
+            font-size: 1.7em;
+        }
+        .invite-content {
+            padding: 0 10px;
+            font-size: .7em;
+            .desc {
+                width: 10%;
+            }
+            .info {
+                width: 50%;
+                padding: 0 20px;
+                text-align: left;
+            }
+        }
     }
 }

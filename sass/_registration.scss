@@ -1,10 +1,10 @@
 #registration {
     width: 100%;
-    height: 100vh;
+    height: 3000px;
     clear: both;
     background-image: url("../images/background.png");
     background-position: top right;
-    background-size: cover;
+    // background-size: cover;
     background-repeat: no-repeat;
     .title {
          background-color: $mm4-yellow;
@@ -25,7 +25,7 @@
                     float:left;
                 }
                 input {
-                    width: 70%;
+                    width: 60%;
                     // height: 30px;
                 }
             }
@@ -39,6 +39,9 @@
             clear: right;
             h3 {
                 color: $mm4-yellow;
+            }
+            .read-more-toggle {
+                color: $mm4-white;
             }
             p {
                 color: $mm4-white;

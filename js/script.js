@@ -5,8 +5,10 @@ $(document).ready(function() {
         console.log("Loaded");
     }
 
-    $('.stuff').readmore({
-        speed:75
+    $('.read-more-content').addClass('hide');
+
+    $('.read-more-toggle').on('click', function() {
+      $(this).next('.read-more-content').toggleClass('hide');
     });
 });
 

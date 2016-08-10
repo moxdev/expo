@@ -7,6 +7,9 @@
     }
     .about-content {
         padding: 0 20px;
+        h4 {
+            color: $mm4_orange;
+        }
         h3 {
             text-transform: uppercase;
             color: $mm4-blue;

@@ -1,14 +1,24 @@
 header {
 
+    .logo {
+        // width: 200px;
+        // max-width: 100%;
+    }
     h1 {
         color: #0072ae;
         text-align: left;
-        font-size: 2.5em;
-        padding: 0;
-        margin-left: 2em;
+        // font-size: 2.5em;
+        // margin-left: 2em;
     }
-    .logo {
-        width: 200px;
-        max-width: 100%;
+
+    @include respond-to(iphone) {
+        .logo {
+            width: 40%;
+        }
+        h1 {
+            // width: 70%;
+            font-size: 1em;
+            padding: 0;
+        }
     }
 }
