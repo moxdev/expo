@@ -11,21 +11,21 @@
     }
     .registration-wrapper {
         .form-section {
-            width: 49%;
-            float: left;
+            // width: 49%;
+            // float: left;
             .form-row {
-                display: block;
-                margin: 20px;
+                display: inline;
+                // margin: 20px;
                 label {
                     color: $mm4_white;
-                    width: 150px;
-                    height: auto;
-                    text-align: right;
-                    margin-right:15px;
-                    float:left;
+                    // width: 150px;
+                    // height: auto;
+                    // text-align: right;
+                    // margin-right:15px;
+                    // float:left;
                 }
                 input {
-                    width: 60%;
+                    // width: 60%;
                     // height: 30px;
                 }
             }
@@ -34,9 +34,9 @@
             }
         }
         .schedule-section {
-            width: 49%;
-            float: right;
-            clear: right;
+            // width: 49%;
+            // float: right;
+            // clear: right;
             h3 {
                 color: $mm4-yellow;
             }
@@ -100,6 +100,36 @@
             a {
                 color: $mm4_white;
             }
+        }
+    }
+
+    @include respond-to(iphone) {
+
+        h1 {
+            font-size: $h1-mobile-font;
+        }
+        .form-section {
+            width: 100%;
+            .form-row {
+                // margin: 10px 0 10px 10px;
+                label {
+                    width: 30%;
+                    float: left;
+                    text-align: right;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                }
+                input {
+                    width: 60%;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .schedule-section {
+            width: 100%;
+            clear: both;
+            margin-top: 50px;
         }
     }
 }

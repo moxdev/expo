@@ -1,12 +1,12 @@
 #about {
-    width: 50%;
-    float: right;
+    // width: 50%;
+    // float: right;
     // clear: left;
     .title {
         background-color: $mm4-orange;
     }
     .about-content {
-        padding: 0 20px;
+        // padding: 0 20px;
         h4 {
             color: $mm4_orange;
         }
@@ -21,6 +21,20 @@
         .blue-words {
             color: $mm4_blue;
             font-weight: 700;
+        }
+    }
+
+    @include respond-to(iphone) {
+        width: 100%;
+        float: none;
+        h1 {
+            font-size: $h1-mobile-font;
+        }
+        .about-content {
+            padding: 0 10px;
+        }
+        h3 {
+            font-size: 1em;
         }
     }
 }

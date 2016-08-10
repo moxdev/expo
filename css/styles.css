@@ -645,18 +645,9 @@ header h1 {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-/* line 1, ../sass/_about.scss */
-#about {
-  width: 50%;
-  float: right;
-}
 /* line 5, ../sass/_about.scss */
 #about .title {
   background-color: #e75200;
-}
-/* line 8, ../sass/_about.scss */
-#about .about-content {
-  padding: 0 20px;
 }
 /* line 10, ../sass/_about.scss */
 #about .about-content h4 {
@@ -677,6 +668,25 @@ header h1 {
   color: #0072ae;
   font-weight: 700;
 }
+@media (min-width: 320px) {
+  /* line 1, ../sass/_about.scss */
+  #about {
+    width: 100%;
+    float: none;
+  }
+  /* line 30, ../sass/_about.scss */
+  #about h1 {
+    font-size: 1.7em;
+  }
+  /* line 33, ../sass/_about.scss */
+  #about .about-content {
+    padding: 0 10px;
+  }
+  /* line 36, ../sass/_about.scss */
+  #about h3 {
+    font-size: 1em;
+  }
+}
 
 /*--------------------------------------------------------------
 # Registration
@@ -694,38 +704,17 @@ header h1 {
 #registration .title {
   background-color: #ffd456;
 }
-/* line 13, ../sass/_registration.scss */
-#registration .registration-wrapper .form-section {
-  width: 49%;
-  float: left;
-}
 /* line 16, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .form-row {
-  display: block;
-  margin: 20px;
+  display: inline;
 }
 /* line 19, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .form-row label {
   color: #FFF;
-  width: 150px;
-  height: auto;
-  text-align: right;
-  margin-right: 15px;
-  float: left;
-}
-/* line 27, ../sass/_registration.scss */
-#registration .registration-wrapper .form-section .form-row input {
-  width: 60%;
 }
 /* line 32, ../sass/_registration.scss */
 #registration .registration-wrapper .form-section .honey {
   display: none !important;
-}
-/* line 36, ../sass/_registration.scss */
-#registration .registration-wrapper .schedule-section {
-  width: 49%;
-  float: right;
-  clear: right;
 }
 /* line 40, ../sass/_registration.scss */
 #registration .registration-wrapper .schedule-section h3 {
@@ -804,6 +793,35 @@ header h1 {
 /* line 100, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-address a {
   color: #FFF;
+}
+@media (min-width: 320px) {
+  /* line 108, ../sass/_registration.scss */
+  #registration h1 {
+    font-size: 1.7em;
+  }
+  /* line 111, ../sass/_registration.scss */
+  #registration .form-section {
+    width: 100%;
+  }
+  /* line 115, ../sass/_registration.scss */
+  #registration .form-section .form-row label {
+    width: 30%;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  /* line 122, ../sass/_registration.scss */
+  #registration .form-section .form-row input {
+    width: 60%;
+    margin-top: 10px;
+  }
+  /* line 129, ../sass/_registration.scss */
+  #registration .schedule-section {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
