@@ -694,10 +694,11 @@ header h1 {
 /* line 1, ../sass/_registration.scss */
 #registration {
   width: 100%;
-  height: 3000px;
+  height: auto;
   clear: both;
   background-image: url("../images/background.png");
   background-position: top right;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 /* line 9, ../sass/_registration.scss */
@@ -736,14 +737,10 @@ header h1 {
 #registration .registration-wrapper .schedule-section label {
   color: #ffd456;
 }
-/* line 55, ../sass/_registration.scss */
-#registration .registration-wrapper .schedule-section input {
-  margin: 15px;
-}
 /* line 58, ../sass/_registration.scss */
-#registration .registration-wrapper .schedule-section .read-more {
+#registration .registration-wrapper .schedule-section .read-more-toggle {
   color: #FFF;
-  margin-left: 40px;
+  margin-left: 45px;
 }
 /* line 63, ../sass/_registration.scss */
 #registration .registration-wrapper .submit {
@@ -760,50 +757,47 @@ header h1 {
 }
 /* line 76, ../sass/_registration.scss */
 #registration .footer-wrapper {
+  background-color: #0072ae;
   clear: both;
-  color: #FFF;
+  color: #0072ae;
 }
-/* line 79, ../sass/_registration.scss */
+/* line 80, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-promo {
   width: 49%;
   float: left;
 }
-/* line 82, ../sass/_registration.scss */
+/* line 83, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-promo a {
   padding: 20px;
 }
-/* line 85, ../sass/_registration.scss */
-#registration .footer-wrapper .footer-promo #mm4 {
-  width: 200px;
-}
-/* line 89, ../sass/_registration.scss */
+/* line 90, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-social {
   width: 49%;
   float: right;
   text-align: right;
   margin-bottom: 20px;
 }
-/* line 95, ../sass/_registration.scss */
+/* line 96, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-address {
   width: 49%;
   float: right;
   clear: right;
   text-align: right;
 }
-/* line 100, ../sass/_registration.scss */
+/* line 101, ../sass/_registration.scss */
 #registration .footer-wrapper .footer-address a {
   color: #FFF;
 }
 @media (min-width: 320px) {
-  /* line 108, ../sass/_registration.scss */
+  /* line 109, ../sass/_registration.scss */
   #registration h1 {
     font-size: 1.7em;
   }
-  /* line 111, ../sass/_registration.scss */
+  /* line 112, ../sass/_registration.scss */
   #registration .form-section {
     width: 100%;
   }
-  /* line 115, ../sass/_registration.scss */
+  /* line 116, ../sass/_registration.scss */
   #registration .form-section .form-row label {
     width: 30%;
     float: left;
@@ -811,16 +805,38 @@ header h1 {
     margin-right: 10px;
     margin-top: 10px;
   }
-  /* line 122, ../sass/_registration.scss */
+  /* line 123, ../sass/_registration.scss */
   #registration .form-section .form-row input {
     width: 60%;
     margin-top: 10px;
   }
-  /* line 129, ../sass/_registration.scss */
+  /* line 130, ../sass/_registration.scss */
   #registration .schedule-section {
     width: 100%;
     clear: both;
-    margin-top: 50px;
+  }
+  /* line 134, ../sass/_registration.scss */
+  #registration .schedule-section .fieldset {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+  }
+  /* line 139, ../sass/_registration.scss */
+  #registration .schedule-section .fieldset li {
+    padding: 20px 0;
+  }
+  /* line 143, ../sass/_registration.scss */
+  #registration .schedule-section .fieldset input {
+    float: left;
+    clear: both;
+  }
+  /* line 148, ../sass/_registration.scss */
+  #registration .schedule-section .fieldset label {
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+    margin-bottom: 5px;
   }
 }
 
