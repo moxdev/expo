@@ -589,7 +589,7 @@ body {
 --------------------------------------------------------------*/
 /* line 2, ../sass/_header.scss */
 header .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 /* line 5, ../sass/_header.scss */
 header h1 {
@@ -637,16 +637,14 @@ header h1 {
 @media (min-width: 992px) {
   /* line 40, ../sass/_header.scss */
   header h1 {
-    font-size: 2.3em;
     float: left;
-    padding: 40px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 47, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   header h1 {
     font-size: 2.5em;
-    padding: 50px;
+    padding-top: 50px;
   }
 }
 
@@ -731,7 +729,7 @@ header h1 {
 @media (min-width: 992px) {
   /* line 69, ../sass/_invite.scss */
   #invite h1 {
-    font-size: 2.3em;
+    font-size: 2em;
   }
   /* line 72, ../sass/_invite.scss */
   #invite .invite-content {
@@ -807,7 +805,7 @@ header h1 {
 @media (min-width: 992px) {
   /* line 51, ../sass/_about.scss */
   #about h1 {
-    font-size: 2.3em;
+    font-size: 2em;
   }
   /* line 57, ../sass/_about.scss */
   #about .about-content {
@@ -1059,7 +1057,7 @@ header h1 {
 @media (min-width: 992px) {
   /* line 213, ../sass/_registration.scss */
   #registration h1 {
-    font-size: 2.3em;
+    font-size: 2em;
   }
   /* line 216, ../sass/_registration.scss */
   #registration .registration-wrapper {
