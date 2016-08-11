@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="content">
             <header>
-                <h1><span><img class="logo" src="images/logo.svg" alt=""></span> Welcome! Excited for You to Join Us.</h1>
+                <span><img class="logo" src="images/logo.svg" alt=""></span><h1>Welcome! Excited for You to Join Us.</h1>
             </header>
             <!--header-->
             <section id="invite">
@@ -24,7 +24,7 @@
                 <div class="invite-content">
                     <h2><span class="desc">what:</span><span class="info">Marketing Expo and Education Event</span></h2>
                     <h2><span class="desc">when:</span><span class="info">Wednesday, September 14, 2016 from 9:00am - 2:00pm</span></h2>
-                    <h2><span class="desc">where:</span><span class="info">Millennium Marketing Solutions <a href="#">Get Directions</a></span></h2>
+                    <h2><span class="desc">where:</span><span class="info">Millennium Marketing Solutions <a href="https://www.google.com/maps/place/Millennium+Marketing+Solutions/@39.130104,-76.7946677,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e73b5c052709:0x3740136e105f7228!8m2!3d39.130104!4d-76.792479" target="_blank">Get Directions</a></span></h2>
                 </div>
             </section>
             <!--invite-->
@@ -51,7 +51,8 @@
                     <h1>Event Schedule &amp; Registration</h1>
                 </div>
                 <div class="registration-wrapper">
-                    <form id="contact-form" name="contact-form" action="post">
+                    <form id="contact-form" action="thank-you.php" method="POST">
+                    <input type="hidden" name="recipients" value="chris_AT_mm4solutions.com">
                         <div class="form-section">
                             <span class="form-row">
                                 <label for="first-name">* First Name:</label>

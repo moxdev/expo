@@ -1,12 +1,8 @@
 #about {
-    // width: 50%;
-    // float: right;
-    // clear: left;
     .title {
         background-color: $mm4-orange;
     }
     .about-content {
-        // padding: 0 20px;
         h4 {
             color: $mm4_orange;
         }
@@ -26,7 +22,7 @@
 
     @include respond-to(iphone) {
         width: 100%;
-        float: none;
+        clear: both;
         h1 {
             font-size: $h1-mobile-font;
         }
@@ -36,5 +32,30 @@
         h3 {
             font-size: 1em;
         }
+    }
+    @include respond-to(tablet) {
+       float: right;
+       width: 50%;
+       clear: right;
+       h1 {
+           font-size: $h1-tablet-font;
+       }
+       h3 {
+            font-size: .8em;
+       }
+       .read-more-content {
+            padding-right: 10px;
+       }
+    }
+    @include respond-to(laptop) {
+       h1 {
+           font-size: $h1-laptop-font;
+       }
+       h3 {
+            // font-size: 1em;
+       }
+       .about-content {
+            font-size: 1.2em;
+       }
     }
 }

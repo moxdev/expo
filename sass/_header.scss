@@ -1,24 +1,53 @@
 header {
-
     .logo {
-        // width: 200px;
-        // max-width: 100%;
+        max-width: 250px;
     }
     h1 {
         color: #0072ae;
-        text-align: left;
-        // font-size: 2.5em;
-        // margin-left: 2em;
     }
-
     @include respond-to(iphone) {
         .logo {
             width: 40%;
+            float: left;
+            clear: right;
+            padding: 10px;
         }
         h1 {
-            // width: 70%;
-            font-size: 1em;
+            width: 60%;
+            float: right;
+            font-size: $h1-iphone-font;
+            margin: 0;
+        }
+    }
+    @include respond-to(mobile) {
+        h1 {
+            font-size: $h1-mobile-font;
+        }
+    }
+    @include respond-to(tablet) {
+        padding-top: 20px;
+        .logo {
             padding: 0;
+            width: 20%;
+            float: left;
+        }
+        h1 {
+            width: 80%;
+            font-size: $h1-tablet-font;
+        }
+    }
+    @include respond-to(laptop) {
+        h1 {
+            font-size: $h1-laptop-font;
+            float: left;
+            padding: 40px;
+        }
+    }
+    @include respond-to(desktop) {
+        h1 {
+            font-size: $h1-desktop-font;
+            padding: 50px;
         }
     }
 }
+

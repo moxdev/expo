@@ -1,32 +1,23 @@
 #registration {
     width: 100%;
-    height: 100vh;
+    height: auto;
     clear: both;
     background-image: url("../images/background.png");
     background-position: top right;
     background-size: cover;
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     .title {
          background-color: $mm4-yellow;
     }
+    a {
+        color: $mm4_white;
+    }
     .registration-wrapper {
         .form-section {
-            // width: 49%;
-            // float: left;
             .form-row {
                 display: inline;
-                // margin: 20px;
                 label {
                     color: $mm4_white;
-                    // width: 150px;
-                    // height: auto;
-                    // text-align: right;
-                    // margin-right:15px;
-                    // float:left;
-                }
-                input {
-                    // width: 60%;
-                    // height: 30px;
                 }
             }
             .honey {
@@ -34,13 +25,10 @@
             }
         }
         .schedule-section {
-            // width: 49%;
-            // float: right;
-            // clear: right;
-            h3 {
+            h3, label {
                 color: $mm4-yellow;
             }
-            .read-more-toggle {
+            .read-more-toggle, .read-more-content  {
                 color: $mm4-white;
             }
             p {
@@ -49,19 +37,8 @@
                     font-family: $bold-font;
                 }
             }
-            label {
-                color: $mm4_yellow;
-            }
-            input {
-                // margin: 15px;
-            }
-            .read-more-content {
-                color: $mm4_white;
-                // margin-left: 45px;
-            }
         }
         .submit {
-            float: left;
             clear: both;
             width: 100%;
             margin: 20px auto;
@@ -75,39 +52,20 @@
     }
     .footer-wrapper {
         color: $mm4_white;
-        // clear: both;
         .footer-promo {
-            // width: 49%;
-            // float: left;
-            a {
-                // padding: 20px;
-            }
             #mm4 {
-                max-width: 200px;
-            }
-        }
-        .footer-social{
-            // width: 49%;
-            // float: right;
-            // text-align: center;
-            // margin-bottom: 20px;
-            a {
-                color: $mm4_white;
+                max-width: 250px;
             }
         }
         .footer-address {
             margin-bottom: 50px;
-            // width: 49%;
-            // float: right;
-            // clear: right;
-            // text-align: right;
-            a {
-                color: $mm4_white;
-            }
         }
     }
 
     @include respond-to(iphone) {
+        .registration-wrapper {
+            padding: 0 10px;
+        }
         h1 {
             font-size: $h1-mobile-font;
         }
@@ -129,7 +87,7 @@
         }
         .schedule-section {
             width: 100%;
-            padding: 10px;
+            padding-top: 10px;
             clear: both;
 
             .fieldset {
@@ -137,6 +95,14 @@
                 list-style-type: none;
                 margin: 0;
                 padding: 10px;
+                .read-more-toggle {
+                    margin: 5px 0 5px 32px;
+                    float: left;
+                }
+                .read-more-content {
+                    float: left;
+                    padding: 0 30px;
+                }
                 input {
                     float: left;
                     clear: both;
@@ -150,6 +116,7 @@
             }
         }
         .footer-wrapper {
+            clear: both;
             .footer-promo {
                 width: 100%;
                 margin-left: 20px;
@@ -174,5 +141,136 @@
                 text-align: center;
             }
         }
+    }
+    @include respond-to(mobile) {
+        .registration-wrapper {
+            padding: 0 20px;
+        }
+        .form-section {
+            .form-row {
+                label {
+                    width: 20%;
+                }
+            }
+        }
+        .schedule-section {
+            .fieldset {
+                .read-more-toggle, {
+                    float: left;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    margin-left: 35px;
+                }
+                .read-more-content {
+                    float: left;
+                    padding: 0 35px;
+                }
+                input[type="checkbox"] {
+                  cursor: pointer;
+                }
+            }
+        }
+        .footer-wrapper {
+            clear: both;
+            .footer-promo {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                #mm4 {
+                    width: 250px;
+                    margin: 10px;
+                }
+                #wbenc {
+                    width: 80px;
+                    padding-bottom: 10px;
+                    margin: 10px;
+                }
+                #google-partner {
+                    width: 80px;
+                    padding-bottom: 10px;
+                    margin: 10px;
+                }
+            }
+            .footer-social {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .footer-address {
+                font-size: .7em;
+                text-align: center;
+            }
+        }
+    }
+    @include respond-to(tablet) {
+        h1 {
+            font-size: $h1-tablet-font;
+        }
+        .registration-wrapper {
+            padding: 0 40px;
+        }
+    }
+    @include respond-to(laptop) {
+        h1 {
+            font-size: $h1-laptop-font;
+        }
+        .registration-wrapper {
+            padding: 0 20px;
+            .form-section {
+                width: 50%;
+                float: left;
+                .form-row {
+                    display: inline;
+                    label {
+                        color: $mm4_white;
+                        float:left;
+                        width: 150px;
+                        height: auto;
+                        text-align: right;
+                        margin-right:15px;
+                    }
+                    input {
+                        width: 60%;
+                        height: 30px;
+                    }
+                }
+            }
+            .schedule-section {
+                width: 50%;
+                float: right;
+                clear: right;
+                h3 {
+                    margin: 0;
+                }
+            }
+            .submit {
+                font-size: 1.5em;
+            }
+        }
+        .footer-wrapper {
+            .footer-promo {
+                width: 50%;
+                float: left;
+                text-align: left;
+            }
+            .footer-social{
+                width: 50%;
+                float: right;
+                clear: right;
+                text-align: right;
+                padding-right: 20px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            .footer-address {
+                width: 50%;
+                float: right;
+                clear: both;
+                text-align: right;
+                padding-right: 20px;
+                font-size: .9em;
+            }
+        }
+    }
+    @include respond-to(desktop) {
     }
 }
