@@ -1,1 +1,1 @@
-$(document).ready(function(){"undefined"==typeof jQuery?console.log("jQuery Undefined"):console.log("Loaded"),$(".read-more-content").addClass("hide"),$(".read-more-toggle").on("click",function(){$(this).next(".read-more-content").toggleClass("hide")})});
+$(document).ready(function(){$(".read-more-content").addClass("hide"),$(".read-more-toggle").on("click",function(){$(this).next(".read-more-content").toggleClass("hide")})});

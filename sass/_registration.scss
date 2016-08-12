@@ -23,6 +23,7 @@
                 display: inline;
                 label {
                     color: $mm4_white;
+                    font-family: $bold-font;
                 }
             }
             .honey {
@@ -32,12 +33,15 @@
         .schedule-section {
             h3, label {
                 color: $mm4-yellow;
+                font-family: $bold-font;
             }
             .read-more-toggle, .read-more-content  {
                 color: $mm4-white;
+                font-family: $regular-font;
             }
             p {
                 color: $mm4-white;
+                font-family: $regular-font;
                 span {
                     font-family: $bold-font;
                 }

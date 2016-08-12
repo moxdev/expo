@@ -3,7 +3,7 @@ header {
         max-width: 200px;
     }
     h1 {
-        color: #0072ae;
+        color: $mm4_blue;
     }
     @include respond-to(iphone) {
         .logo {

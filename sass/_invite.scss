@@ -4,11 +4,12 @@
     }
     .invite-content{
         .desc {
+            font-family: $bold-font;
             text-transform: uppercase;
             color: $mm4_blue;
         }
         .info {
-            font-weight: normal;
+            font-family: $regular-font;
         }
     }
     @include respond-to(iphone) {

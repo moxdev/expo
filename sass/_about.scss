@@ -3,10 +3,14 @@
         background-color: $mm4-orange;
     }
     .about-content {
+        p {
+            font-family: $regular-font;
+        }
         h4 {
             color: $mm4_orange;
         }
         h3 {
+            font-family: $bold-font;
             text-transform: uppercase;
             color: $mm4-blue;
         }
