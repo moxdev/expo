@@ -10,9 +10,7 @@
         .info {
             font-weight: normal;
         }
-
     }
-
     @include respond-to(iphone) {
         clear: both;
         width: 100%;
@@ -55,9 +53,6 @@
         clear: both;
         float: left;
         width: 50%;
-        h1 {
-            // font-size: $h1-tablet-font;
-        }
         .invite-content {
             .info {
                 padding-left: 10px;
@@ -66,11 +61,17 @@
         }
     }
     @include respond-to(laptop) {
-       h1 {
-           // font-size: $h1-laptop-font;
-       }
        .invite-content {
-            // font-size: .8em;
-       }
+            .desc {
+                width: 15%;
+            }
+        }
+    }
+    @include respond-to(desktop) {
+        .invite-content {
+                .desc {
+                    width: 10%;
+                }
+            }
     }
 }

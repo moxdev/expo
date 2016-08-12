@@ -21,7 +21,7 @@ header {
     }
     @include respond-to(mobile) {
         h1 {
-            font-size: $h1-mobile-font;
+            font-size: $header-mobile;
         }
     }
     @include respond-to(tablet) {
@@ -44,7 +44,6 @@ header {
     }
     @include respond-to(desktop) {
         h1 {
-            // font-size: $header-tablet;
             padding-top: 50px;
         }
     }
