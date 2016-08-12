@@ -271,6 +271,15 @@
             }
         }
     }
-    @include respond-to(desktop) {
+    @include respond-to(large) {
+        .registration-wrapper {
+            .form-section {
+                .form-row {
+                    label {
+                        width: 180px;
+                    }
+                }
+            }
+        }
     }
 }

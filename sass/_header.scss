@@ -32,8 +32,9 @@ header {
             float: left;
         }
         h1 {
+            padding-top: 40px;
             width: 80%;
-            font-size: $h1-tablet-font;
+            font-size: $header-tablet;
         }
     }
     @include respond-to(laptop) {
@@ -43,7 +44,7 @@ header {
     }
     @include respond-to(desktop) {
         h1 {
-            font-size: $h1-desktop-font;
+            // font-size: $header-tablet;
             padding-top: 50px;
         }
     }

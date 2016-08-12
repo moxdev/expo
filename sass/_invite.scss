@@ -56,7 +56,7 @@
         float: left;
         width: 50%;
         h1 {
-            font-size: $h1-tablet-font;
+            // font-size: $h1-tablet-font;
         }
         .invite-content {
             .info {
@@ -67,10 +67,10 @@
     }
     @include respond-to(laptop) {
        h1 {
-           font-size: $h1-laptop-font;
+           // font-size: $h1-laptop-font;
        }
        .invite-content {
-            font-size: .8em;
+            // font-size: .8em;
        }
     }
 }

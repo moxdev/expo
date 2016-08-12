@@ -630,20 +630,20 @@ header h1 {
   }
   /* line 34, ../sass/_header.scss */
   header h1 {
+    padding-top: 40px;
     width: 80%;
     font-size: 2em;
   }
 }
 @media (min-width: 992px) {
-  /* line 40, ../sass/_header.scss */
+  /* line 41, ../sass/_header.scss */
   header h1 {
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 45, ../sass/_header.scss */
+  /* line 46, ../sass/_header.scss */
   header h1 {
-    font-size: 2.5em;
     padding-top: 50px;
   }
 }
@@ -716,24 +716,10 @@ header h1 {
     float: left;
     width: 50%;
   }
-  /* line 58, ../sass/_invite.scss */
-  #invite h1 {
-    font-size: 2em;
-  }
   /* line 62, ../sass/_invite.scss */
   #invite .invite-content .info {
     padding-left: 10px;
     width: 70%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 69, ../sass/_invite.scss */
-  #invite h1 {
-    font-size: 2em;
-  }
-  /* line 72, ../sass/_invite.scss */
-  #invite .invite-content {
-    font-size: .8em;
   }
 }
 
@@ -789,10 +775,6 @@ header h1 {
     width: 50%;
     clear: right;
   }
-  /* line 40, ../sass/_about.scss */
-  #about h1 {
-    font-size: 2em;
-  }
   /* line 43, ../sass/_about.scss */
   #about h3 {
     font-size: .8em;
@@ -800,16 +782,6 @@ header h1 {
   /* line 46, ../sass/_about.scss */
   #about .read-more-content {
     padding-right: 10px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 51, ../sass/_about.scss */
-  #about h1 {
-    font-size: 2em;
-  }
-  /* line 57, ../sass/_about.scss */
-  #about .about-content {
-    font-size: 1.2em;
   }
 }
 
@@ -1047,7 +1019,7 @@ header h1 {
 @media (min-width: 768px) {
   /* line 205, ../sass/_registration.scss */
   #registration h1 {
-    font-size: 2em;
+    font-size: 1.8;
   }
   /* line 208, ../sass/_registration.scss */
   #registration .registration-wrapper {
@@ -1124,6 +1096,12 @@ header h1 {
     text-align: right;
     padding-right: 20px;
     font-size: .9em;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 278, ../sass/_registration.scss */
+  #registration .registration-wrapper .form-section .form-row label {
+    width: 180px;
   }
 }
 

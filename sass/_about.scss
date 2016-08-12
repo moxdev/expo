@@ -38,7 +38,7 @@
        width: 50%;
        clear: right;
        h1 {
-           font-size: $h1-tablet-font;
+           // font-size: $h1-tablet-font;
        }
        h3 {
             font-size: .8em;
@@ -49,13 +49,13 @@
     }
     @include respond-to(laptop) {
        h1 {
-           font-size: $h1-laptop-font;
+           // font-size: $h1-laptop-font;
        }
        h3 {
             // font-size: 1em;
        }
        .about-content {
-            font-size: 1.2em;
+            // font-size: 1.2em;
        }
     }
 }
