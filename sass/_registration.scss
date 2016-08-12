@@ -9,6 +9,11 @@
     .title {
          background-color: $mm4-yellow;
     }
+    .thank-you-title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: $h1-thank-you;
+    }
     a {
         color: $mm4_white;
     }
@@ -271,6 +276,15 @@
             }
         }
     }
-    @include respond-to(desktop) {
+    @include respond-to(large) {
+        .registration-wrapper {
+            .form-section {
+                .form-row {
+                    label {
+                        width: 180px;
+                    }
+                }
+            }
+        }
     }
 }

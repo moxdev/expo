@@ -1,6 +1,6 @@
 header {
     .logo {
-        max-width: 250px;
+        max-width: 200px;
     }
     h1 {
         color: #0072ae;
@@ -21,7 +21,7 @@ header {
     }
     @include respond-to(mobile) {
         h1 {
-            font-size: $h1-mobile-font;
+            font-size: $header-mobile;
         }
     }
     @include respond-to(tablet) {
@@ -32,21 +32,19 @@ header {
             float: left;
         }
         h1 {
+            padding-top: 40px;
             width: 80%;
-            font-size: $h1-tablet-font;
+            font-size: $header-tablet;
         }
     }
     @include respond-to(laptop) {
         h1 {
-            font-size: $h1-laptop-font;
             float: left;
-            padding: 40px;
         }
     }
     @include respond-to(desktop) {
         h1 {
-            font-size: $h1-desktop-font;
-            padding: 50px;
+            padding-top: 50px;
         }
     }
 }

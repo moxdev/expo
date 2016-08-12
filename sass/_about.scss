@@ -19,7 +19,6 @@
             font-weight: 700;
         }
     }
-
     @include respond-to(iphone) {
         width: 100%;
         clear: both;
@@ -37,25 +36,11 @@
        float: right;
        width: 50%;
        clear: right;
-       h1 {
-           font-size: $h1-tablet-font;
-       }
        h3 {
             font-size: .8em;
        }
        .read-more-content {
             padding-right: 10px;
-       }
-    }
-    @include respond-to(laptop) {
-       h1 {
-           font-size: $h1-laptop-font;
-       }
-       h3 {
-            // font-size: 1em;
-       }
-       .about-content {
-            font-size: 1.2em;
        }
     }
 }
