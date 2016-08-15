@@ -1,4 +1,7 @@
 #invite {
+   #{$a-tags} {
+       color: $text_main;
+   }
     .title {
         background-color: $mm4_gray;
     }
@@ -20,7 +23,7 @@
         }
         .invite-content {
             padding: 0 10px;
-            font-size: .7em;
+            font-size: .9em;
             .desc {
                 width: 10%;
                 float: left;
@@ -73,6 +76,9 @@
                 .desc {
                     width: 10%;
                 }
-            }
+                .info {
+                    padding-left: 30px;
+                }
+        }
     }
 }

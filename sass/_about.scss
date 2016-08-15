@@ -20,7 +20,6 @@
         }
         .blue-words {
             color: $mm4_blue;
-            font-weight: 700;
         }
     }
     @include respond-to(iphone) {
@@ -40,9 +39,6 @@
        float: right;
        width: 50%;
        clear: right;
-       h3 {
-            font-size: .8em;
-       }
        .read-more-content {
             padding-right: 10px;
        }

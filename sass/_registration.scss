@@ -1,11 +1,6 @@
 #registration {
-    width: 100%;
-    height: auto;
     clear: both;
-    background-image: url("../images/background.png");
-    background-position: top right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $mm4_blue;
     .title {
          background-color: $mm4-yellow;
     }
@@ -51,7 +46,7 @@
             clear: both;
             width: 100%;
             margin: 20px auto;
-            padding: 10px;
+            padding-top: 10px;
             border-radius: 0;
             border: none;
             background-color: $mm4-orange;
@@ -69,8 +64,15 @@
         .footer-address {
             margin-bottom: 50px;
         }
+        .footer-social {
+            .social-icon {
+                svg {
+                    width: 25px;
+                    display: inline-block;
+                }
+            }
+        }
     }
-
     @include respond-to(iphone) {
         .registration-wrapper {
             padding: 0 10px;
@@ -125,10 +127,11 @@
             }
         }
         .footer-wrapper {
-            clear: both;
+            // clear: both;
             .footer-promo {
-                width: 100%;
-                margin-left: 20px;
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
                 #mm4 {
                     width: 150px;
                 }
@@ -143,6 +146,7 @@
             }
             .footer-social {
                 text-align: center;
+                display: block;
                 margin-bottom: 20px;
             }
             .footer-address {
@@ -180,7 +184,7 @@
             }
         }
         .footer-wrapper {
-            clear: both;
+            // clear: both;
             .footer-promo {
                 width: 100%;
                 text-align: center;
@@ -223,7 +227,7 @@
             font-size: $h1-laptop-font;
         }
         .registration-wrapper {
-            padding: 0 20px;
+            padding: 20px;
             .form-section {
                 width: 50%;
                 float: left;
@@ -256,23 +260,20 @@
             }
         }
         .footer-wrapper {
+            padding: 20px;
             .footer-promo {
-                width: 50%;
+                width: 53%;
                 float: left;
                 text-align: left;
             }
             .footer-social{
-                width: 50%;
+                width: 40%;
                 float: right;
-                clear: right;
                 text-align: right;
+                padding-top: 48px;
                 padding-right: 20px;
-                margin-top: 50px;
-                margin-bottom: 20px;
             }
             .footer-address {
-                width: 50%;
-                float: right;
                 clear: both;
                 text-align: right;
                 padding-right: 20px;
@@ -286,6 +287,28 @@
                 .form-row {
                     label {
                         width: 180px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to(xlarge) {
+        .registration-wrapper {
+            .form-section {
+                .form-row {
+                    label {
+                        margin-right: 75px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to(xxlarge) {
+        .registration-wrapper {
+            .schedule-section {
+                .fieldset {
+                    label {
+                        width: 85%;
                     }
                 }
             }

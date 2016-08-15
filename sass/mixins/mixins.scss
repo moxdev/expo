@@ -4,6 +4,8 @@
 // laptop, min-width: 992px
 // desktop, min-width: 1200px
 // large, min-width: 1690px
+// xlarge, min-width: 1990px
+// xxlarge, min-width: 2243px
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "iphone" {
@@ -38,6 +40,18 @@
 
   @else if $breakpoint == "large" {
     @media (min-width: 1690px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "xlarge" {
+    @media (min-width: 1990px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "xxlarge" {
+    @media (min-width: 2243px) {
       @content;
     }
   }
