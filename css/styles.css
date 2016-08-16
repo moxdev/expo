@@ -873,25 +873,25 @@ header h1 {
 #registration .footer-wrapper .footer-address {
   margin-bottom: 50px;
 }
-/* line 69, ../sass/_registration.scss */
-#registration .footer-wrapper .footer-social .social-icon svg {
+/* line 68, ../sass/_registration.scss */
+#registration .footer-wrapper .footer-social .social-icon {
   width: 25px;
   display: inline-block;
 }
 @media (min-width: 320px) {
-  /* line 77, ../sass/_registration.scss */
+  /* line 75, ../sass/_registration.scss */
   #registration .registration-wrapper {
     padding: 0 10px;
   }
-  /* line 80, ../sass/_registration.scss */
+  /* line 78, ../sass/_registration.scss */
   #registration h1 {
     font-size: 1.7em;
   }
-  /* line 83, ../sass/_registration.scss */
+  /* line 81, ../sass/_registration.scss */
   #registration .form-section {
     width: 100%;
   }
-  /* line 86, ../sass/_registration.scss */
+  /* line 84, ../sass/_registration.scss */
   #registration .form-section .form-row label {
     width: 30%;
     float: left;
@@ -899,166 +899,166 @@ header h1 {
     margin-right: 10px;
     margin-top: 10px;
   }
-  /* line 93, ../sass/_registration.scss */
+  /* line 91, ../sass/_registration.scss */
   #registration .form-section .form-row input {
     width: 60%;
     margin-top: 10px;
   }
-  /* line 99, ../sass/_registration.scss */
+  /* line 97, ../sass/_registration.scss */
   #registration .schedule-section {
     width: 100%;
     padding-top: 10px;
     clear: both;
   }
-  /* line 104, ../sass/_registration.scss */
+  /* line 102, ../sass/_registration.scss */
   #registration .schedule-section .fieldset {
     display: block;
     list-style-type: none;
     margin: 0;
     padding: 10px;
   }
-  /* line 109, ../sass/_registration.scss */
+  /* line 107, ../sass/_registration.scss */
   #registration .schedule-section .fieldset .read-more-toggle {
     margin: 5px 0 5px 32px;
     float: left;
   }
-  /* line 113, ../sass/_registration.scss */
+  /* line 111, ../sass/_registration.scss */
   #registration .schedule-section .fieldset .read-more-content {
     float: left;
     padding: 0 30px;
   }
-  /* line 117, ../sass/_registration.scss */
+  /* line 115, ../sass/_registration.scss */
   #registration .schedule-section .fieldset input {
     float: left;
     clear: both;
   }
-  /* line 121, ../sass/_registration.scss */
+  /* line 119, ../sass/_registration.scss */
   #registration .schedule-section .fieldset label {
     margin-left: 20px;
     float: left;
     width: 80%;
     margin-bottom: 5px;
   }
-  /* line 131, ../sass/_registration.scss */
+  /* line 129, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo {
     display: block;
     text-align: center;
     margin-bottom: 10px;
   }
-  /* line 135, ../sass/_registration.scss */
+  /* line 133, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #mm4 {
     width: 150px;
   }
-  /* line 138, ../sass/_registration.scss */
+  /* line 136, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #wbenc {
     width: 50px;
     padding-bottom: 10px;
   }
-  /* line 142, ../sass/_registration.scss */
+  /* line 140, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #google-partner {
     width: 50px;
     padding-bottom: 10px;
   }
-  /* line 147, ../sass/_registration.scss */
+  /* line 145, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-social {
     text-align: center;
     display: block;
     margin-bottom: 20px;
   }
-  /* line 152, ../sass/_registration.scss */
+  /* line 150, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-address {
     font-size: .5em;
     text-align: center;
   }
 }
 @media (min-width: 480px) {
-  /* line 159, ../sass/_registration.scss */
+  /* line 157, ../sass/_registration.scss */
   #registration .registration-wrapper {
     padding: 0 20px;
   }
-  /* line 164, ../sass/_registration.scss */
+  /* line 162, ../sass/_registration.scss */
   #registration .form-section .form-row label {
     width: 20%;
   }
-  /* line 171, ../sass/_registration.scss */
+  /* line 169, ../sass/_registration.scss */
   #registration .schedule-section .fieldset .read-more-toggle {
     float: left;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 35px;
   }
-  /* line 177, ../sass/_registration.scss */
+  /* line 175, ../sass/_registration.scss */
   #registration .schedule-section .fieldset .read-more-content {
     float: left;
     padding: 0 35px;
   }
-  /* line 181, ../sass/_registration.scss */
+  /* line 179, ../sass/_registration.scss */
   #registration .schedule-section .fieldset input[type="checkbox"] {
     cursor: pointer;
   }
-  /* line 188, ../sass/_registration.scss */
+  /* line 186, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo {
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
-  /* line 192, ../sass/_registration.scss */
+  /* line 190, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #mm4 {
     width: 250px;
     margin: 10px;
   }
-  /* line 196, ../sass/_registration.scss */
+  /* line 194, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #wbenc {
     width: 80px;
     padding-bottom: 10px;
     margin: 10px;
   }
-  /* line 201, ../sass/_registration.scss */
+  /* line 199, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo #google-partner {
     width: 80px;
     padding-bottom: 10px;
     margin: 10px;
   }
-  /* line 207, ../sass/_registration.scss */
+  /* line 205, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-social {
     text-align: center;
     margin-bottom: 20px;
   }
-  /* line 211, ../sass/_registration.scss */
+  /* line 209, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-address {
     font-size: .7em;
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  /* line 218, ../sass/_registration.scss */
+  /* line 216, ../sass/_registration.scss */
   #registration h1 {
     font-size: 1.8;
   }
-  /* line 221, ../sass/_registration.scss */
+  /* line 219, ../sass/_registration.scss */
   #registration .registration-wrapper {
     padding: 0 40px;
   }
 }
 @media (min-width: 992px) {
-  /* line 226, ../sass/_registration.scss */
+  /* line 224, ../sass/_registration.scss */
   #registration h1 {
     font-size: 2em;
   }
-  /* line 229, ../sass/_registration.scss */
+  /* line 227, ../sass/_registration.scss */
   #registration .registration-wrapper {
     padding: 20px;
   }
-  /* line 231, ../sass/_registration.scss */
+  /* line 229, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section {
     width: 50%;
     float: left;
   }
-  /* line 234, ../sass/_registration.scss */
+  /* line 232, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section .form-row {
     display: inline;
   }
-  /* line 236, ../sass/_registration.scss */
+  /* line 234, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section .form-row label {
     color: #FFF;
     float: left;
@@ -1067,36 +1067,36 @@ header h1 {
     text-align: right;
     margin-right: 15px;
   }
-  /* line 244, ../sass/_registration.scss */
+  /* line 242, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section .form-row input {
     width: 60%;
     height: 30px;
   }
-  /* line 250, ../sass/_registration.scss */
+  /* line 248, ../sass/_registration.scss */
   #registration .registration-wrapper .schedule-section {
     width: 50%;
     float: right;
     clear: right;
   }
-  /* line 254, ../sass/_registration.scss */
+  /* line 252, ../sass/_registration.scss */
   #registration .registration-wrapper .schedule-section h3 {
     margin: 0;
   }
-  /* line 258, ../sass/_registration.scss */
+  /* line 256, ../sass/_registration.scss */
   #registration .registration-wrapper .submit {
     font-size: 1.5em;
   }
-  /* line 262, ../sass/_registration.scss */
+  /* line 260, ../sass/_registration.scss */
   #registration .footer-wrapper {
     padding: 20px;
   }
-  /* line 264, ../sass/_registration.scss */
+  /* line 262, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-promo {
     width: 53%;
     float: left;
     text-align: left;
   }
-  /* line 269, ../sass/_registration.scss */
+  /* line 267, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-social {
     width: 40%;
     float: right;
@@ -1104,7 +1104,7 @@ header h1 {
     padding-top: 48px;
     padding-right: 20px;
   }
-  /* line 276, ../sass/_registration.scss */
+  /* line 274, ../sass/_registration.scss */
   #registration .footer-wrapper .footer-address {
     clear: both;
     text-align: right;
@@ -1113,19 +1113,19 @@ header h1 {
   }
 }
 @media (min-width: 1690px) {
-  /* line 288, ../sass/_registration.scss */
+  /* line 286, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section .form-row label {
     width: 180px;
   }
 }
 @media (min-width: 1990px) {
-  /* line 299, ../sass/_registration.scss */
+  /* line 297, ../sass/_registration.scss */
   #registration .registration-wrapper .form-section .form-row label {
     margin-right: 75px;
   }
 }
 @media (min-width: 2243px) {
-  /* line 310, ../sass/_registration.scss */
+  /* line 308, ../sass/_registration.scss */
   #registration .registration-wrapper .schedule-section .fieldset label {
     width: 85%;
   }
